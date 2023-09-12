@@ -7,6 +7,10 @@ jobs:
   test:
     runs-on: windows-latest
 
+    defaults:
+      run:
+        shell: bash
+
     steps:
       - run: |
           TMP="$(mktemp -d)"
