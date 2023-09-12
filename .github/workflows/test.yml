@@ -1,0 +1,15 @@
+name: Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+      - run: |
+          TMP="$(mktemp -d)"
+          git clone https://github.com/rust-lang/rust-clippy "$TMP"
+          cd "$TMP"
+          cargo uitest
