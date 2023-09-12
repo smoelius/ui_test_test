@@ -18,4 +18,5 @@ jobs:
           cd "$TMP"
           # git checkout 15ed281699802aae2364b77a4e9900a9acad3d0d
           git checkout dd8e44c5a22ab646821252604420c5bb82c36aa9
+          git checkout ec1d61e06
           cargo uitest
