@@ -20,5 +20,6 @@ jobs:
           # git checkout dd8e44c5a22ab646821252604420c5bb82c36aa9 passed
           # git checkout 588c1abb7 passed
           # git checkout d65c4595e failed
-          git checkout b5bfd1176
+          # git checkout b5bfd1176 failed
+          git checkout 84d289674
           cargo uitest
