@@ -16,4 +16,5 @@ jobs:
           TMP="$(mktemp -d)"
           git clone https://github.com/rust-lang/rust-clippy "$TMP"
           cd "$TMP"
+          git checkout 15ed281699802aae2364b77a4e9900a9acad3d0d
           cargo uitest
